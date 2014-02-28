@@ -1,0 +1,23 @@
+{
+    "name": "davispeixoto/maxmind-db-reader",
+    "description": "Laravel 4 MaxMind DB Reader port",
+    "keywords": ["laravel", "maxmind", "geoip", "reader", "laravel 4"],
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "Davis Peixoto",
+            "email": "davis.peixoto@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*",
+        "maxmind-db/reader": "0.3.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Davispeixoto\\MaxmindDbReader\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
