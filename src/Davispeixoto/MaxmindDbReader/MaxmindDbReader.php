@@ -8,7 +8,11 @@ class MaxmindDbReader {
 	
 	public function __construct($db_file)
 	{
-		self::$reader = new Reader($db_file);
+		if (extension_loaded('bcmath')) {
+			self::$reader = new Reader($db_file);
+		} else {
+			throw new Exception('Maxmind DB Reader needs BC Math extension. Please install and/or enable it before using');
+		}
 	}
 	
 	public static function get($ipAddress)
